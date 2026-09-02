@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Clover Showcase</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #0d0f12;
+      color: #f3f4f6;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #ff4b4b, #ffb800);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .img-wrapper {
+      overflow: hidden;
+      border-radius: 12px;
+      border: 2px solid #30363d;
+      background: #090d11;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .img-wrapper:hover {
+      transform: translateY(-6px);
+      border-color: #ff4b4b;
+    }
+
+    .img-wrapper img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <h1>Black Clover — Volume 1</h1>
+    <div class="gallery">
+      <div class="img-wrapper">
+        <img 
+          src="Black_Clover,_volume_1.jpg" 
+          alt="Black Clover Volume 1 Local Cover" 
+          loading="lazy"
+        />
+      </div>
+      <div class="img-wrapper">
+        <img 
+          src="https://chiranjivi-yadav.github.io/project-book2/Black_Clover,_volume_1.jpg" 
+          alt="Black Clover Volume 1 Remote Cover" 
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
